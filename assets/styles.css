@@ -1,0 +1,260 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    background: #0c0c0c;
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+
+/* HERO */
+/* HERO - Container Principal */
+.hero {
+    background: linear-gradient(135deg, #00c3ff, #004aad);
+    color: white;
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Container para alinhar melhor os elementos */
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+/* Texto da seção Hero */
+.hero-content {
+    max-width: 500px;
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #00ffea, #0099ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background: rgba(0, 255, 234, 0.9);
+    color: #0c0c0c;
+    padding: 12px 25px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px #00ffea;
+}
+
+.hero .btn:hover {
+    background: #0099ff;
+    box-shadow: 0px 0px 15px #0099ff;
+}
+
+/* FEATURES */
+.features {
+    padding: 80px 20px;
+    background: #111;
+}
+
+.features h2 {
+    color: #00ffea;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background: rgba(0, 255, 234, 0.1);
+    padding: 25px;
+    border-radius: 10px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 255, 234, 0.5);
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+.feature p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.feature img {
+    width: 60px; /* Tamanho dos ícones */
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* PRICING */
+.pricing {
+    padding: 80px 20px;
+    background: #222;
+}
+
+.pricing h2 {
+    color: #00ffea;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+}
+
+.plans {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.plan {
+    background: rgba(0, 255, 234, 0.1);
+    padding: 25px;
+    border-radius: 10px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 255, 234, 0.5);
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+
+.plan:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 15px rgba(0, 255, 234, 0.7);
+}
+
+.plan h3 {
+    color: #00ffea;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.plan p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Melhorando os Bullet Points */
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.plan ul li {
+    font-size: 1rem;
+    padding: 5px 0;
+    position: relative;
+    padding-left: 30px;
+}
+
+.plan ul li::before {
+    content: "✔";
+    color: #00ffea;
+    position: absolute;
+    left: 5px;
+    font-weight: bold;
+}
+
+.plan .btn {
+    background: #00ffea;
+    color: #111;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.plan .btn:hover {
+    background: #0099ff;
+    box-shadow: 0px 0px 10px #0099ff;
+}
+
+/* SIGNUP */
+.signup {
+    padding: 80px 20px;
+    background: #0c0c0c;
+}
+
+.signup h2 {
+    color: #00ffea;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.signup form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.signup input {
+    padding: 12px;
+    width: 280px;
+    border: 2px solid #00ffea;
+    background: transparent;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.signup .btn {
+    background: #00ffea;
+    color: #0c0c0c;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 1rem;
+}
+
+.signup .btn:hover {
+    background: #0099ff;
+    box-shadow: 0px 0px 10px #0099ff;
+}
