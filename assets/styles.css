@@ -44,8 +44,8 @@ img {
 
 /* Texto da seção Hero */
 .hero-content {
-    max-width: 500px;
-    animation: fadeInLeft 1s ease-in-out;
+    max-width: 1200px; /* Ajuste conforme necessário */
+    text-align: center; /* Mantém alinhado */
 }
 
 .hero h1 {
@@ -55,7 +55,12 @@ img {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 20px;
+    white-space: nowrap; /* Evita quebra de linha */
+    overflow: hidden; /* Esconde qualquer excesso */
+    text-overflow: ellipsis; /* Adiciona "..." caso o texto seja muito longo */
+    max-width: 100%; /* Garante que não ultrapasse o contêiner */
 }
+
 
 .hero p {
     font-size: 1.2rem;
